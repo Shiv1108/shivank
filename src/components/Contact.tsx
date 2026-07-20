@@ -15,7 +15,7 @@ const Contact = () => {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -32,7 +32,7 @@ const Contact = () => {
           from_email: formData.email,
           message: formData.message,
         },
-        "mEfgS0eCSGjUAi9n8" // ← EmailJS public key
+        "Kdg73kKqmmhY4lkBG", // ← EmailJS public key
       )
       .then(
         () => {
@@ -45,7 +45,7 @@ const Contact = () => {
           toast.error("Failed to send message!", {
             description: error.text,
           });
-        }
+        },
       );
   };
 
