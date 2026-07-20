@@ -32,7 +32,7 @@ const Contact = () => {
           from_email: formData.email,
           message: formData.message,
         },
-        "Kdg73kKqmmhY4lkBGs", // ← EmailJS public key
+        "Kdg73kKqmmhY4lkBG", // ← EmailJS public key
       )
       .then(
         () => {
